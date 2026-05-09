@@ -198,69 +198,17 @@ namespace XOGame
             e.Graphics.DrawLine(whitePen, 250, 185, 815, 185);
             e.Graphics.DrawLine(whitePen, 250, 310, 815, 310);
 
-
-
-
         }
+
 
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
             this.Text = $"X: {e.X} Y: {e.Y}";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            ChangeImage(pictureBox3);
-        }
-
-
-
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            ChangeImage(pictureBox2);
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            ChangeImage(pictureBox4);
-        }
-
-
-
-        private void pictureBox13_Click(object sender, EventArgs e)
-        {
-            ChangeImage(pictureBox13);
-        }
-
-        private void pictureBox12_Click(object sender, EventArgs e)
-        {
-            ChangeImage(pictureBox12);
-        }
-
-        private void pictureBox11_Click(object sender, EventArgs e)
-        {
-            ChangeImage(pictureBox11);
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            ChangeImage(pictureBox5);
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            ChangeImage(pictureBox6);
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            ChangeImage(pictureBox7);
+            ChangeImage((PictureBox)sender);
         }
 
         private void btRestart_Click(object sender, EventArgs e)
